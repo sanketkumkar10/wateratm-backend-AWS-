@@ -13,3 +13,6 @@ This project contains the backend for the Water ATM application.
 - `app/services` - business services
 - `app/utils` - utility helpers
 - `app/main.py` - FastAPI application entrypoint
+# Water ATM Backend AWS
+
+Production backend using FastAPI, PostgreSQL, Razorpay and AWS EC2.
