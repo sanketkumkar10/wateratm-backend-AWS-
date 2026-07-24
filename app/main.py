@@ -1,7 +1,20 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(
+    title="Water ATM Backend",
+    version="1.0.0"
+)
+
 
 @app.get("/")
-def read_root():
-    return {"message": "WaterATMBackend is running"}
+def home():
+    return {
+        "message": "Water ATM Backend Running"
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
